@@ -3,7 +3,7 @@
 	"title": "Brackets Pryme Theme",
 	"version": "1.0.0",
 	"description": "Delicate and colourful theme which will make coding fun",
-	"homepage": "https://github.com/arish/brackets-pryme-theme",
+    "homepage": "https://github.com/AriShPryme/brackets_pryme",
 	"author": "AriSh <arishpryme@gmail.com> (http://www.prymera.com)",
 	"license": "MIT",
 	"theme": {
