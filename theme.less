@@ -1,184 +1,189 @@
 /*
 "name": "brackets_pryme",
 "title": "Brackets Pryme Theme",
-"version": "1.0.2",
+"version": "2.0.1", 
 "description": "Delicate and colourful theme that makes coding fun",
 "homepage": "https://github.com/AriShPryme/brackets_pryme",
-"author": "AriSh <arishpryme@gmail.com> (http://www.prymera.com)",
+"author": "AriSh <arishpryme@gmail.com> (http://www.prymera.xyz)",
 "license": "MIT",
 */
 
-@background: #fcfcf9;
+@background: #fefefe;
 @foreground: #000000;
 
 /*
 * Color Scheme
 * ============
 */
-.cm-string {color: #01a009;}
-.cm-string.cm-property{color: #000000;}
+
+.cm-string {color: #1db300;}
+.cm-string.cm-property {color: #000000;}
 .cm-error {background: #FFFF73; color: #dc322f !important;}
-.cm-meta{color: #ff0303;}
-.cm-comment {color: #b1cfd2; font-style: italic;}
-.cm-atom{color: #0000FF;}
-.cm-number{color: #EC7600;}
-.cm-link {color: #b77fdb; text-decoration: none;}
-.cm-property {color: #515101;}
-.cm-attribute {color: #ff01f6;}
-.cm-keyword {color: #0000FF;}
-.cm-variable {color: #000000;}
-.cm-variable-2 {color: #EC7600;}
+.cm-meta {color: #ff000c;}
+.cm-comment {color: #b8c3b8; font-size:15px; font-style: italic;}
+.cm-atom {color: #0000FF;}
+.cm-number {color: #08c2c2;}
+.cm-link {color: #E88520;text-decoration: none;}
+.cm-property {color: #E88520;}
+.cm-attribute {color: #d702fd;}
+.cm-keyword {color: #FF000C;}
+.cm-variable {color: #ff000c;}
+.cm-variable-2 {color: #bb0012;font-weight:500;}
 .cm-variable-3 {color: #EC7600;}
-.cm-qualifier {color: #ff01f6;}
-.cm-builtin {color:#ff01f6;}
-.cm-def {color: #FF0303;}
-.cm-bracket {}
-.cm-operator {color: #FF0303;}
-.cm-tag {color: #28bbf2}
+.cm-qualifier {color: #d702fd;}
+.cm-builtin {color: #ff000c;}
+.cm-def {color: #bb0012; font-weight:500;}
+.cm-bracket {color: antiquewhite;}
+.cm-operator {color: #ff000c;}
+.cm-tag {color: #0196fe;}
+
 
 /*
 *
 * Editor Style
 *
 */
+
 .CodeMirror,
 .CodeMirror .CodeMirror-scroll {
-    	background: @background;
-    	color: @foreground;
-    	line-height: 24px;
-	font-family: 'Poppins', 'Source Sans Pro', 'Courier' 'Karla';
-	font-size: 14px;
+	background: @background;
+	color: @foreground;
+	font-family: 'Prestige Elite Std';
+	font-size: 18px;	
+	line-height: 26px;
 }
 
-.CodeMirror .CodeMirror-scroll {
-    padding-left: 1px;
-}
 
 #not-editor,
 #image-holder {
-    background-color: #222;
-    color: #F8F8F2;
-    transition: background-color 0.3s ease-out;
+	background-color: #222;
+	color: #F8F8F2;
+	transition: background-color 0.3s ease-out;
 }
 
 .CodeMirror {
-    border-left-color: #1B1B1B;
-}/*not found*/
+	border-left-color: #1B1B1B;
+}
 
 div.CodeMirror-selected {
-    background-color: #02fffc;
-    //    background-color: #03b1e3;
-    opacity: .25;
+	background-color: #02fffc;
+	opacity: .35;
 }
 
 .CodeMirror-gutters {
-    background-color: #e8e8de;
+	background-color: #efefef;
 }
 
 .CodeMirror-guttermarker {
-    color: #F8F8F2;
-}/*not found*/
+	color: #F8F8F2;
+}
 
 .CodeMirror-guttermarker-subtle {
-    color: #272822;
-}/*not found*/
+	color: #272822;
+}
 
 .CodeMirror-linenumber {
-    color: #3C3F41;
+	color: #89bee2;
 }
 
 .CodeMirror-cursor {
-    border-left: 1px solid #000000 !important;
+	border-left: 2px solid #ff000c !important;
 }
 
 .CodeMirror-activeline-background,
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: @background;
-    border-top: 1px solid #fcdada;
-    border-bottom: 1px solid #fcdada;
+	background-color: #fbfbfb;
+	border-top: 1px solid #fcdada;
+	border-bottom: 1px solid #fcdada;
 }
 
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-    background-color: #f2f2e7;
-    color: #3C3F41;
-
-
-}/*not found*/
+	background-color: #e8e8e8;
+	color: #0066ad;
+}
 
 .CodeMirror-focused .CodeMirror-activeline .inline-widget .CodeMirror-gutter-elt {
-    background-color: @background;
-    color: #767676;
-
-}/*not found*/
+	background-color: @background;
+	color: #767676;
+}
 
 .CodeMirror-matchingtag {
-    box-shadow: 3px 4px 5px #898986;
-    border-top: 1px solid #e0e0e0;
-    background-color: #f2f2e7;
+	background-color: #eaeaea;
+	border-top: 2px solid #eaeaea;
+	border-bottom: 4px solid #dbdbdb;
 }
 
+
 .CodeMirror-matchingbracket {
-    background-color: inherit !important;
-    color: #FF0303 !important;
-    font-weight: bold;
+	background-color: inherit !important;
+	color: #FF0303 !important;
+	font-weight: bold;
 }
+
 
 /**
 * Extensions
 * ==========
 */
 
+
 /*
 * Brackets-Vim (https://github.com/megalord/brackets-vim)
 * -------------------------------------------------------
 */
+
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
-    background: rgba(248, 248, 242, 0.5) !important;
+	background: rgba(248, 248, 242, 0.5) !important;
 }
+
 
 /**
 * Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)
 * --------------------------------------------------------------------------
 */
+
 .CodeMirror .cm-dk-whitespace-space::before,
 .CodeMirror .cm-dk-whitespace-tab::before,
 .CodeMirror .cm-dk-whitespace-leading-space::before,
 .CodeMirror .cm-dk-whitespace-leading-tab::before,
 .CodeMirror .cm-dk-whitespace-trailing-space::before,
 .CodeMirror .cm-dk-whitespace-trailing-tab::before {
-    background-color: #75715E !important;
+	background-color: #75715E !important;
 }
+
 
 /**
 * Code Folding (https://github.com/thehogfather/brackets-code-folding)
 * --------------------------------------------------------------------
 */
+
 .CodeMirror-foldgutter,
 .CodeMirror-foldgutter,
 .CodeMirror-foldgutter-blank,
 .CodeMirror-foldgutter-folded,
 .CodeMirror-foldgutter-open {
-    color: #75715E;
+	color: #75715E;
 }
 
 .CodeMirror-foldgutter-open::after {
-    content: "\25bd";
+	content: "\25bd";
 }
 
 .CodeMirror-foldmarker {
-    background-color: #333;
-    border-color: #555;
-    color: #555;
-    padding: 0 10px;
+	background-color: #bbb;
+	border-color: #555;
+	color: #555;
+	padding: 0 10px;
 }
+
 
 /* Non-editor styling */
 
 #image-holder,
 #not-editor {
-    background-color: @background;
+	background-color: @background;
 }
 
 #image-holder {
-    color: @foreground;
+	color: @foreground;
 }
