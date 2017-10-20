@@ -1,7 +1,7 @@
 /*
-"name": "brackets_pryme",
-"title": "Brackets Pryme Theme",
-"version": "2.0.3", 
+"name": "brackets_pryme_light",
+"title": "Brackets Pryme Theme - Light",
+"version": "2.0.4", 
 "description": "Delicate and colourful light theme that makes coding fun and an enjoyable experience. Happy Coding!",
 "homepage": "https://github.com/AriShPryme/brackets_pryme",
 "author": "AriSh <arishpryme@gmail.com> (http://www.prymera.xyz)",
@@ -9,19 +9,17 @@
 "This is a light theme made for brackets. This theme will bring some life to boring coding work."
 */
 
-@background: #fefefe;
+
+@background: #e5e5e5;
 @foreground: #333;
 
-/*
-* Color Scheme
-* ============
-*/
+/* Color Scheme */
 
 .cm-string {color: #1db300;}
 .cm-string.cm-property {color: #666;}
 .cm-error {background: #FFFF73; color: #dc322f !important;}
 .cm-meta {color: #ff000c;}
-.cm-comment {color: #b8c3b8; font-size:15px; font-style: italic;}
+.cm-comment {color: #a8b5a8; font-size:15px; font-style: italic;}
 .cm-atom {color: #0000FF;}
 .cm-number {color: #08c2c2;}
 .cm-link {color: #E88520;text-decoration: none;}
@@ -39,19 +37,17 @@
 .cm-tag {color: #0196fe;}
 
 
-/*
-*
-* Editor Style
-*
-*/
+/* Editor Style */
 
 .CodeMirror,
 .CodeMirror .CodeMirror-scroll {
 	background: @background;
 	color: @foreground;
-	font-family: 'Prestige Elite Std';
+	font-family: 'Raleway', 'Prestige Elite Std', 'Source Sans Pro' ;
 	font-size: 18px;
-	line-height: 24px;
+	font-weight: 500;
+	line-height: 30px;
+	letter-spacing: 1px;
 }
 
 
@@ -72,7 +68,7 @@ div.CodeMirror-selected {
 }
 
 .CodeMirror-gutters {
-	background-color: #f3f3f3;
+	background-color: #cccccc;
 	border-right: 1px solid #e3e9e9;
 }
 
@@ -85,7 +81,7 @@ div.CodeMirror-selected {
 }
 
 .CodeMirror-linenumber {
-	color: #89bee2;
+	color: #4999cf;
 }
 
 .CodeMirror-cursor {
@@ -94,7 +90,7 @@ div.CodeMirror-selected {
 
 .CodeMirror-activeline-background,
 .CodeMirror-focused .CodeMirror-activeline .CodeMirror-gutter-elt {
-	background-color: #fbfbfb;
+	background-color: #eaeaea;
 	border-top: 1px solid #fcdada;
 	border-bottom: 1px solid #fcdada;
 }
@@ -125,26 +121,17 @@ div.CodeMirror-selected {
 }
 
 
-/**
-* Extensions
-* ==========
-*/
+/* Extensions */
 
 
-/*
-* Brackets-Vim (https://github.com/megalord/brackets-vim)
-* -------------------------------------------------------
-*/
+/* Brackets-Vim (https://github.com/megalord/brackets-vim) */
 
 .CodeMirror.cm-keymap-fat-cursor div.CodeMirror-cursor {
 	background: rgba(248, 248, 242, 0.5) !important;
 }
 
 
-/**
-* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace)
-* --------------------------------------------------------------------------
-*/
+/* Show Whitespace (https://github.com/DennisKehrig/brackets-show-whitespace) */
 
 .CodeMirror .cm-dk-whitespace-space::before,
 .CodeMirror .cm-dk-whitespace-tab::before,
@@ -156,10 +143,7 @@ div.CodeMirror-selected {
 }
 
 
-/**
-* Code Folding (https://github.com/thehogfather/brackets-code-folding)
-* --------------------------------------------------------------------
-*/
+/* Code Folding (https://github.com/thehogfather/brackets-code-folding) */
 
 .CodeMirror-foldgutter,
 .CodeMirror-foldgutter,
